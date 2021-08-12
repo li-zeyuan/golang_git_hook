@@ -1,5 +1,3 @@
-# kaiming.git_hook.golang
-
 ### 代码检查
 - goimports
   - 自动格式化导包
@@ -13,7 +11,7 @@
 
 ### 安装
 - 1、cd 到.git所在的目录
-- 2、一键安装：`curl -kSL https://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/install.sh | sh`
+- 2、一键安装：`curl -kSL http://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/install.sh | sh`
 
 ### 使用
 - 正常commit即可
