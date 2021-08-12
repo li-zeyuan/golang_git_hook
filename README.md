@@ -12,6 +12,7 @@
 ### 安装
 - 1、cd 到.git所在的目录
 - 2、一键安装：`curl -kSL http://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/install.sh | sh`
+- 3、提示`curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to raw.githubusercontent.com:443 `;重试即可
 
 ### 使用
 - 正常commit即可

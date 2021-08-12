@@ -52,7 +52,7 @@ main() {
 #  chmod +x .git/hooks/commit-msg
   chmod +x .git/hooks/pre-commit
 
-  _green "Golang pre_commit hook & commit-msg hook Install Success!"
+  _green "Install Success!"
 }
 
 main "$@"
