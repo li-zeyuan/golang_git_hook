@@ -5,7 +5,7 @@
 - golint
   - 代码静态检查
 - commit msg检查（未完成）
-  - 以feat、docs、fix开头
+  - 以feat|fix|docs|chore开头
   - msg字数不少于10个字符
 - 期待你的mr
 
@@ -15,7 +15,7 @@
 
 ### 使用
 - 正常commit即可
-- 跳过代码检查：`git commit --no-verify`
+- 跳过代码检查：`git add . && git commit --no-verify`
     ```json
      1、紧急情况下使用
      2、你的--no-verify，意味着你的代码转移给其他童鞋verify
