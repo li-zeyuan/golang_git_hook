@@ -46,10 +46,11 @@ main() {
     rm .git/hooks/commit-msg;
   fi
 
-  curl https://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/commit-msg.sh -o .git/hooks/commit-msg
+#  curl https://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/commit-msg.sh -o .git/hooks/commit-msg
   curl https://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/pre-commit.sh -o .git/hooks/pre-commit
 
-  chmod +x .git/hooks/commit-msg .git/hooks/pre-commit
+#  chmod +x .git/hooks/commit-msg
+  chmod +x .git/hooks/pre-commit
 
   _green "Golang pre_commit hook & commit-msg hook Install Success!"
 }
