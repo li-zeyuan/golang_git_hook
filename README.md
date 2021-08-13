@@ -2,7 +2,7 @@
 - goimports
   - 自动格式化导包
   - 格式化代码
-- golint
+- golangci-lint
   - 代码静态检查
 - commit msg检查（未完成）
   - 以feat|fix|docs|chore开头

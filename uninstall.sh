@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ -f .git/hooks/pri-commit ]; then
-    rm .git/hooks/pri-commit;
+if [ -f .git/hooks/pre-commit ]; then
+    rm .git/hooks/pre-commit;
 fi
 
 if [ -f .git/hooks/commit-msg ]; then
@@ -13,3 +13,5 @@ if [ -d ~/.git_template ]; then
   rm -r ~/.git_template
   git config --global --unset init.templatedir
 fi
+
+echo "Uninstall Success!"

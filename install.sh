@@ -47,7 +47,7 @@ main() {
   fi
 
 #  curl https://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/commit-msg.sh -o .git/hooks/commit-msg
-  curl https://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/pre-commit.sh -o .git/hooks/pre-commit
+  curl http://raw.githubusercontent.com/li-zeyuan/golang_git_hook/master/pre-commit.sh -o .git/hooks/pre-commit
 
 #  chmod +x .git/hooks/commit-msg
   chmod +x .git/hooks/pre-commit
