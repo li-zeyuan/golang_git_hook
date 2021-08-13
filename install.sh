@@ -52,6 +52,14 @@ main() {
 #  chmod +x .git/hooks/commit-msg
   chmod +x .git/hooks/pre-commit
 
+  # 安装全局git_template
+  if [ -d ~/.git_template ]; then
+    rm -r ~/.git_template
+  fi
+  mkdir -p ~/.git_template/hooks
+  git config --global init.templatedir '~/.git_template'
+  cp .git/hooks/pre-commit ~/.git_template/hooks
+
   _green "Install Success!"
 }
 

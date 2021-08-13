@@ -22,5 +22,6 @@
      2、你的--no-verify，意味着你的代码转移给其他童鞋verify
   
 ### 参考
+- git钩子：https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90
 - 利用git hook规范你的代码与commit message：https://github.com/razeencheng/git-hooks
 - shell脚本基础：https://shellscript.readthedocs.io/zh_CN/latest/1-syntax/1-scriptstruct/index.html
