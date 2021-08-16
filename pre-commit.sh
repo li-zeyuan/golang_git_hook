@@ -57,10 +57,10 @@ fi
 echo "golangci-lint start..."
 if golangci-lint >/dev/null 2>&1; then  # 检测是否安装
 	lint_errors=false
-	for file in ${go_files[*]} ; do
-		lint_result="$(golangci-lint run $file)" # run golangci-lint
+	for dir in ${go_dirs[*]} ; do
+		lint_result="$(golangci-lint run $dir)" # run golangci-lint
 		if test -n "$lint_result" ; then
-			echo "golangci-lint run '$file':\n$lint_result"
+			echo "golangci-lint run '$dir':\n$lint_result"
 			lint_errors=true
 			has_errors=1
 		fi
@@ -70,7 +70,7 @@ if golangci-lint >/dev/null 2>&1; then  # 检测是否安装
 		echo "\n"
 	fi
 else
-	echo 'Error: golangci-lint not install. See:  https://golangci-lint.run/usage/install/#local-installation' >&2
+	echo 'Error: golangci-lint not install. See: https://golangci-lint.run/usage/install/#local-installation' >&2
 	exit 1
 fi
 
