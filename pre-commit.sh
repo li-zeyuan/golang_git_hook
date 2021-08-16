@@ -33,6 +33,7 @@ done
 [ -z "$go_files" ] && exit 0
 
 # goimports 自动导包
+echo "goimports start..."
 if goimports >/dev/null 2>&1; then  # 检测是否安装
   import_error=false
   for file in ${go_files[*]} ; do
@@ -53,6 +54,7 @@ else
 fi
 
 # golangci-lint 代码规范检测
+echo "golangci-lint start..."
 if golangci-lint >/dev/null 2>&1; then  # 检测是否安装
 	lint_errors=false
 	for file in ${go_files[*]} ; do
